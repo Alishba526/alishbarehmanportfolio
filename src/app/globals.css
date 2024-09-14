@@ -48,7 +48,7 @@
     --ring: rgb(216, 34%, 17%);
   }
 
-  /* Define custom classes here */
+  
   body {
     background-color: var(--background);
     color: var(--foreground);
@@ -56,3 +56,4 @@
     background-color: black;
   }
 }
+
