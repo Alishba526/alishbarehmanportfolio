@@ -2,58 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+:root {
+  --foreground: #171717;
+  --background: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
-    --background: rgb(190, 33, 7%);
-    --foreground: rgb(222.2, 47.4%, 11.2%);
-    --muted: rgb(210, 40%, 96.1%);
-    --muted-foreground: rgb(215.4, 16.3%, 46.9%);
-    --popover: rgb(0, 0%, 100%);
-    --popover-foreground: rgb(222.2, 47.4%, 11.2%);
-    --card: rgb(0, 0%, 100%);
-    --card-foreground: rgb(222.2, 47.4%, 11.2%);
-    --border: rgb(214.3, 31.8%, 91.4%);
-    --input: rgb(214.3, 31.8%, 91.4%);
-    --primary: rgb(222.2, 47.4%, 11.2%);
-    --primary-foreground: rgb(210, 40%, 98%);
-    --secondary: rgb(210, 40%, 96.1%);
-    --secondary-foreground: rgb(222.2, 47.4%, 11.2%);
-    --accent: rgb(210, 40%, 96.1%);
-    --accent-foreground: rgb(222.2, 47.4%, 11.2%);
-    --destructive: rgb(0, 100%, 50%);
-    --destructive-foreground: rgb(210, 40%, 98%);
-    --ring: rgb(215, 20.2%, 65.1%);
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: rgb(224, 71%, 4%);
-    --foreground: rgb(213, 31%, 91%);
-    --muted: rgb(223, 47%, 11%);
-    --muted-foreground: rgb(215.4, 16.3%, 56.9%);
-    --popover: rgb(224, 71%, 4%);
-    --popover-foreground: rgb(215, 20.2%, 65.1%);
-    --card: rgb(224, 71%, 4%);
-    --card-foreground: rgb(213, 31%, 91%);
-    --border: rgb(216, 34%, 17%);
-    --input: rgb(216, 34%, 17%);
-    --primary: rgb(210, 40%, 98%);
-    --primary-foreground: rgb(222.2, 47.4%, 1.2%);
-    --secondary: rgb(222.2, 47.4%, 11.2%);
-    --secondary-foreground: rgb(210, 40%, 98%);
-    --accent: rgb(216, 34%, 17%);
-    --accent-foreground: rgb(210, 40%, 98%);
-    --destructive: rgb(0, 63%, 31%);
-    --destructive-foreground: rgb(210, 40%, 98%);
-    --ring: rgb(216, 34%, 17%);
-  }
-
-  
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
-    font-feature-settings: "rlig" 1, "calt" 1;
-    background-color: black;
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Horizontal scrolling ko disable karna */
+  overflow-y: auto;   /* Vertical scrolling ko allow karna */
+}
+
+#root {
+  height: calc(100vh - 1px);
+  display: flex;
+  flex-direction: column;
+  overflow: auto; /* Vertical scrolling ke liye */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Mobile ke liye specific rules */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden; /* Horizontal scroll ko disable rakhna */
+    overflow-y: auto; /* Mobile par vertical scrolling allow karna */
+    height: 100vh;
+  }
+
+  body {
+    font-size: 14px; /* Mobile par text size adjustment */
+    line-height: 1.5; /* Mobile readability ke liye line height adjustment */
+  }
+
+  #root {
+    height: 100vh;
+    overflow-y: auto; /* Vertical scroll allow karna */
+  }
+
+  /* Responsive spacing adjustments */
+  .container {
+    padding: 10px; /* Mobile view mein proper padding */
+  }
+}

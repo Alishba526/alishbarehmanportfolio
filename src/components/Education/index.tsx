@@ -33,7 +33,7 @@ const Education = () => {
                                 <th scope="row" className="px-6 py-4 font-medium text-background whitespace-nowrap  ">
 Typescript                                </th>
                                 <td className="px-6 py-4 text-background">
-                                    01-2023 - Present
+                                    01-2020
                                 </td>
                                 <td className="px-6 py-4 text-background">
                                     giaic
@@ -45,7 +45,7 @@ Typescript                                </th>
                                     React.js
                                 </th>
                                 <td className="px-6 py-4 text-background">
-                                    01-2023 - Present
+                                    01-2020 
                                 </td>
                                 <td className="px-6 py-4 text-background">
                                    giaic

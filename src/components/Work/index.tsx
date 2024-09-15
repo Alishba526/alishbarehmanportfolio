@@ -75,7 +75,7 @@ const Work = () => {
             </h3>
 
             <time className="block mb-2 text-sm font-normal leading-none text-white pl-2">
-              08/2021 - 03/2023
+              08/2020 - 03/2021
             </time>
 
             <p className="mb-4 text-base font-normal text-white pl-2">
@@ -111,7 +111,7 @@ const Work = () => {
             </h3>
 
             <time className="block mb-2 text-sm font-normal leading-none text-white pl-2">
-              05/2018 - 08/2019
+              05/2022 - 08/2024
             </time>
 
             <p className="mb-4 text-base font-normal text-white pl-2">
