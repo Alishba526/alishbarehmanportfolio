@@ -25,12 +25,12 @@ const Skills = () => {
                         <li className="rounded-lg p-2 m-2 border-2 border-pink-600">RESEARCH</li>
                         <li className="rounded-lg p-2 m-2 border-2 border-pink-600">TIME MANAGEMENT</li>
                         <li className="rounded-lg p-2 m-2 border-2 border-pink-600">ATTENTION TO DETAIL</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-pink-600">ADAPTABILITY</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-pink-600">COLLABORATION</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-pink-600">COMMUNICATION</li>
+                        {/* <li className="rounded-lg p-2 m-2 border-2 border-pink-600">ADAPTABILITY</li>
+                        <li className="rounded-lg p-2 m-2 border-2 border-pink-600">COLLABORATION</li> */}
+                        {/* <li className="rounded-lg p-2 m-2 border-2 border-pink-600">COMMUNICATION</li>
                         <li className="rounded-lg p-2 m-2 border-2 border-pink-600">LEADERSHIP</li>
                         <li className="rounded-lg p-2 m-2 border-2 border-pink-600">RISK MANAGEMENT</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-pink-600">CONTINUOUS LEARNING</li>
+                        <li className="rounded-lg p-2 m-2 border-2 border-pink-600">CONTINUOUS LEARNING</li> */}
                     </ul>
 
                 </div>

@@ -82,7 +82,7 @@ const Hero = () => {
 
         <div className="flex justify-center flex-col p-4 animate__animated animate__backInRight">
           <h1 className="text-white text-5xl text-center lg:text-left font-bold mb-5">
-            Hi, I'm Alisba. Nice to meet you.
+            Hi, I'm Alishba Rehman. Nice to meet you.
           </h1>
           <p className="text-white text-2xl text-center lg:text-left font-normal">
             Hello! I am a web developer and academic writer with a passion for
